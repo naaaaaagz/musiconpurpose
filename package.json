@@ -1,0 +1,34 @@
+{
+  "name": "jean9.net",
+  "version": "1.0.0",
+  "description": "0.0.1",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ilkka Hänninen",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-core": "^5.8.25",
+    "babel-loader": "^5.3.2",
+    "browser-sync": "^2.9.10",
+    "browser-sync-webpack-plugin": "^1.0.0",
+    "css-loader": "^0.19.0",
+    "firebase": "^2.3.1",
+    "lodash": "^3.10.1",
+    "powerchord": "^0.2.2",
+    "powergrid": "^0.4.0",
+    "react": "^0.13.3",
+    "react-router": "^1.0.0-rc3",
+    "style-loader": "^0.12.4",
+    "stylus-loader": "^1.3.1",
+    "webpack": "^1.12.2"
+  },
+  "dependencies": {
+    "react": "^0.14.0",
+    "react-dom": "^0.14.0",
+    "react-modal": "^0.6.1",
+    "superagent": "^1.4.0",
+    "superagent-jsonp": "0.0.6"
+  }
+}
