@@ -2,6 +2,7 @@ import React from 'react';
 import SmartGrid from 'components/SmartGrid';
 import Card from 'components/Card';
 import Header from 'components/Header';
+import Footer from 'components/Footer';
 import Modal from 'react-modal';
 import InstagramModal from 'components/InstagramModal';
 import SoundcloudModal from 'components/SoundcloudModal';
@@ -14,7 +15,7 @@ import Youtube from 'models/Youtube';
 import Bandcamp from 'models/Bandcamp';
 
 export default class MainView extends React.Component {
-  
+
   constructor(props) {
     super(props);
     this.state = {
@@ -27,11 +28,11 @@ export default class MainView extends React.Component {
       new Bandcamp()
     ];
   }
-  
+
   componentWillMount() {
     this.models.forEach((model) => model.fetch().then(this.appendData.bind(this)));
   }
-  
+
   appendData(data) {
     let sorted = this.state.data.concat(data).sort((a,b) => b.time - a.time);
     let separated = {};
@@ -53,19 +54,19 @@ export default class MainView extends React.Component {
     }
     this.setState({data: interlaced});
   }
-  
+
   openModal(data) {
     return () => {
       this.setState({modalData: data});
     };
   }
-  
+
   closeModal() {
     this.setState({modalData: null});
   }
-  
+
   render() {
-    
+
     const modalStyle = {
       overlay: {
         zIndex: 200,
@@ -80,17 +81,17 @@ export default class MainView extends React.Component {
         padding: 0
       }
     };
-    
+
     const modalComponents = {
       instagram: InstagramModal,
       soundcloud: SoundcloudModal,
       youtube: YoutubeModal,
       bandcamp: BandcampModal
     };
-    
+
     const modal = this.state.modalData;
     const ModalContent = modal && modalComponents[modal.source];
-    
+
     return (
       <div>
         <Header />
@@ -104,6 +105,7 @@ export default class MainView extends React.Component {
         >
           {ModalContent && React.createElement(ModalContent, modal)}
         </Modal>
+        <Footer />
       </div>
     );
   }
