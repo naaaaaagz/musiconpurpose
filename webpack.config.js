@@ -1,20 +1,23 @@
-var BrowserSyncPlugin = require('browser-sync-webpack-plugin');
+/* eslint-env node */
+
+const HtmlWebpackPlugin = require('html-webpack-plugin')
+const path = require('path')
 
 module.exports = {
-  entry: "./client/index.js",
+  entry: './client/index.js',
   output: {
-    path: __dirname + "/htdocs/client",
-    filename: "jean9.js"
+    path: path.join(__dirname, '/dist'),
+    filename: 'jean9.js'
   },
   resolve: {
-    modulesDirectories: ['node_modules', 'client']
+    modules: ['node_modules', 'client']
   },
   module: {
-    loaders: [
+    rules: [
       {
         test: /\.js?$/,
         exclude: /(node_modules|bower_components)/,
-        loader: 'babel'
+        loader: 'babel-loader'
       },
       {
         test: /\.css?$/,
@@ -26,12 +29,17 @@ module.exports = {
       }
     ]
   },
-  devtool: "source-map",
+  devtool: 'source-map',
   plugins: [
-    new BrowserSyncPlugin({
-      host: 'localhost',
-      port: 3000,
-      server: { baseDir: ['htdocs'] }
+    new HtmlWebpackPlugin({
+      filename: path.join(__dirname, '/dist/index.html'),
+      template: './client/template/index.html'
     })
-  ]
+  ],
+  devServer: {
+    contentBase: path.join(__dirname, '/dist'),
+    historyApiFallback: true,
+    hot: true,
+    inline: true
+  }
 }
