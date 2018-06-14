@@ -137,7 +137,7 @@ export default [
   'type': 'web',
   'source': 'custom',
   'url': 'http://gamejolt.com/games/baby-mummy-s-curse/16394/',
-  'img': 'bmc.png',
+  'cover': 'img/bmc.png',
   'sticky': false,
   'hidden': false},
 
@@ -185,7 +185,7 @@ export default [
   'type': 'web',
   'source': 'custom',
   'url': 'https://play.google.com/store/apps/details?id=eu.bl.hexxagonhd',
-  'img': 'hexhd.png',
+  'cover': 'img/hexhd.png',
   'sticky': false,
   'hidden': false},
 
@@ -251,7 +251,7 @@ export default [
   'type': 'web',
   'source': 'custom',
   'url': 'http://www.gravitysensation.com/sumotori/',
-  'img': 'smtr.png',
+  'cover': 'img/smtr.png',
   'sticky': false,
   'hidden': false},
 
@@ -441,7 +441,7 @@ export default [
   'type': 'web',
   'source': 'custom',
   'url': 'http://www.newgrounds.com/portal/view/372111',
-  'img': 'arcni.png',
+  'cover': 'img/arcni.png',
   'sticky': false,
   'hidden': false},
 
@@ -602,7 +602,7 @@ export default [
   'type': 'web',
   'source': 'custom',
   'url': 'https://play.google.com/store/apps/details?id=eu.bl.jewel.xmas',
-  'img': 'jfxm.png',
+  'cover': 'img/jfxm.png',
   'sticky': false,
   'hidden': false},
 
@@ -742,7 +742,7 @@ export default [
   'type': 'web',
   'source': 'custom',
   'url': 'http://www.pouet.net/prod.php?which=6575',
-  'img': 'ou2.png',
+  'cover': 'img/ou2.png',
   'sticky': false,
   'hidden': false},
 
@@ -872,7 +872,7 @@ export default [
   'type': 'web',
   'source': 'custom',
   'url': 'https://play.google.com/store/apps/details?id=eu.bl.africa.fun',
-  'img': 'anfu.png',
+  'cover': 'img/anfu.png',
   'sticky': false,
   'hidden': false},
 
@@ -938,7 +938,7 @@ export default [
   'type': 'web',
   'source': 'custom',
   'url': 'https://play.google.com/store/apps/details?id=com.AmorfGames.LooGame&hl=en',
-  'img': 'loog.png',
+  'cover': 'img/loog.png',
   'sticky': false,
   'hidden': false},
 
@@ -985,7 +985,7 @@ export default [
   'type': 'web',
   'source': 'custom',
   'url': 'http://www.pouet.net/prod.php?which=683',
-  'img': 'ouc.png',
+  'cover': 'img/ouc.png',
   'sticky': false,
   'hidden': false},
 
@@ -1061,7 +1061,7 @@ export default [
   'type': 'web',
   'source': 'custom',
   'url': 'http://www.pouet.net/prod.php?which=11748',
-  'img': 'msw.png',
+  'cover': 'img/msw.png',
   'sticky': false,
   'hidden': false},
 
@@ -1445,7 +1445,7 @@ export default [
   'type': 'web',
   'source': 'custom',
   'url': 'http://www.facebook.com/mifelezajez/',
-  'img': 'mze.png',
+  'cover': 'img/mze.png',
   'sticky': false,
   'hidden': false},
 
@@ -1530,7 +1530,7 @@ export default [
   'type': 'web',
   'source': 'custom',
   'url': 'https://twitter.com/tizdarababetu',
-  'img': 'aaaaa.png',
+  'cover': 'img/aaaaa.png',
   'sticky': false,
   'hidden': false},
 
