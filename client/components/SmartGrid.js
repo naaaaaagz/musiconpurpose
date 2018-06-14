@@ -6,14 +6,14 @@ class GridSolver {
     this.cols = cols;
     this.grid = [];
   }
-  
+
   findPos(width, height) {
     const cols = this.cols;
     if (width > this.cols) {
       console.error('Tried to allocate a cell wider than the container');
       return;
     }
-    
+
     for (let y = 0; y < 100; y++) {
       for (let x = 0; x <= cols - width; x++) {
         let fits = true;
@@ -38,23 +38,23 @@ class GridSolver {
 }
 
 export default class SmartGrid extends React.Component {
-  
+
   constructor(props) {
     super(props);
     this.state = {
       width: 0
     };
   }
-  
+
   componentDidMount() {
     this.updateSize();
     window.addEventListener('resize', this.updateSize.bind(this));
   }
-  
+
   componentWillUnmount() {
     window.removeEventListener('resize', this.updateSize.bind(this));
   }
-  
+
   updateSize() {
     this.setState({width: this.refs.container.clientWidth});
   }
@@ -66,16 +66,16 @@ export default class SmartGrid extends React.Component {
       const noOfCols = Math.floor(this.state.width / this.props.minChildSize);
       const unitSize = this.state.width / noOfCols;
       let solver = new GridSolver(noOfCols);
-      
+
       children = children.map((el) => {
-        let elW = el.props.width || 1;
-        let elH = el.props.height || 1;
+        let elW = ['2', '3', '4'].includes(el.props.size) ? 2 : 1
+        let elH = ['3', '4'].includes(el.props.size) ? 2 : 1
         if (elW > noOfCols) {
           elW = noOfCols;
           elH = noOfCols;
         }
-        let pos = solver.findPos(elW, elH);        
-        
+        let pos = solver.findPos(elW, elH);
+
         let style = el.props.style || {};
         style.width = (elW * unitSize) + 'px';
         style.height =(elH * unitSize) + 'px';
@@ -85,21 +85,21 @@ export default class SmartGrid extends React.Component {
 
         return React.cloneElement(el, {style, key});
       });
-      
+
       return (
         <div ref="container" className="smartgrid">
           {children}
         </div>
       );
     }
-    
+
     return (
       <div ref="container">
         {this.props.children}
       </div>
     );
   }
-  
+
 }
 
 SmartGrid.defaultProps = {
