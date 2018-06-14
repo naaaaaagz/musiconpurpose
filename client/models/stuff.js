@@ -1,3 +1,5 @@
+/* eslint indent: "off" */
+
 export default [
 
   {'size': '1',
@@ -745,7 +747,6 @@ export default [
   'cover': 'img/ou2.png',
   'sticky': false,
   'hidden': false},
-
 
   {'size': '1',
   'title': 'Mj�lkmlorpf - Toss It Out [2006]',

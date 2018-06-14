@@ -31,12 +31,7 @@ export default class MainView extends React.Component {
   }
 
   componentWillMount () {
-    this.appendData(this.model.process())
-  }
-
-  appendData (data) {
-    console.log(data)
-    this.setState({data: data})
+    this.setState({data: this.model.process()})
   }
 
   openModal (data) {

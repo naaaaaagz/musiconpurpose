@@ -2,7 +2,7 @@ import stuff from './stuff'
 
 export default class Stuff {
   process () {
-    return stuff.map((item, index) => {
+    return stuff.filter(item => !item.hidden).map((item, index) => {
       switch (item.source) {
         case 'instagram': return {
           id: index,
