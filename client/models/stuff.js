@@ -1,4 +1,4 @@
-export const STUFF = [
+export default [
 
   {'size': '1',
   'type': 'pic',
@@ -13,6 +13,7 @@ export const STUFF = [
   'type': 'music',
   'source': 'soundcloud',
   'url': 'https://soundcloud.com/naaaaaagz/nagz-lethal-2018',
+  'cover': 'https://i1.sndcdn.com/artworks-000297273057-t8pdih-t500x500.jpg',
   'sticky': false,
   'hidden': false},
 
@@ -40,6 +41,7 @@ export const STUFF = [
   'type': 'video',
   'source': 'youtube',
   'url': 'https://www.youtube.com/watch?v=zvDS3vsRx34',
+  'videoId': 'zvDS3vsRx34',
   'sticky': false,
   'hidden': false},
 
@@ -58,6 +60,7 @@ export const STUFF = [
   'type': 'video',
   'source': 'youtube',
   'url': 'https://www.youtube.com/watch?v=2PnFVxc3zNI',
+  'videoId': '2PnFVxc3zNI',
   'sticky': false,
   'hidden': false},
 
@@ -76,6 +79,7 @@ export const STUFF = [
   'type': 'video',
   'source': 'youtube',
   'url': 'https://www.youtube.com/watch?v=TXLZBLMEWuo',
+  'videoId': 'TXLZBLMEWuo',
   'sticky': false,
   'hidden': false},
 
@@ -94,6 +98,7 @@ export const STUFF = [
   'type': 'video',
   'source': 'youtube',
   'url': 'https://www.youtube.com/watch?v=zvDS3vsRx34',
+  'videoId': 'zvDS3vsRx34',
   'sticky': false,
   'hidden': false},
 
@@ -112,6 +117,8 @@ export const STUFF = [
   'type': 'video',
   'source': 'vimeo',
   'url': 'https://vimeo.com/222007272',
+  'cover': 'https://i.vimeocdn.com/video/640425309_640x360.jpg',
+  'videoId': '222007272',
   'sticky': false,
   'hidden': false},
 
@@ -149,6 +156,7 @@ export const STUFF = [
   'type': 'video',
   'source': 'youtube',
   'url': 'https://www.youtube.com/watch?v=fZ0e1HUBJQs',
+  'videoId': 'fZ0e1HUBJQs',
   'sticky': false,
   'hidden': false},
 
@@ -158,6 +166,7 @@ export const STUFF = [
   'type': 'video',
   'source': 'youtube',
   'url': 'https://www.youtube.com/watch?v=XI29sO3qlcg',
+  'videoId': 'XI29sO3qlcg',
   'sticky': false,
   'hidden': false},
 
@@ -186,6 +195,7 @@ export const STUFF = [
   'type': 'video',
   'source': 'youtube',
   'url': 'https://www.youtube.com/watch?v=zGIOIedblM8',
+  'videoId': 'zGIOIedblM8',
   'sticky': false,
   'hidden': false},
 
@@ -213,6 +223,7 @@ export const STUFF = [
   'type': 'video',
   'source': 'youtube',
   'url': 'https://www.youtube.com/watch?v=QcSXbQol00c',
+  'videoId': 'QcSXbQol00c',
   'sticky': false,
   'hidden': false},
 
@@ -259,6 +270,7 @@ export const STUFF = [
   'type': 'video',
   'source': 'youtube',
   'url': 'https://www.youtube.com/watch?v=6rwy7SM0xT8',
+  'videoId': '6rwy7SM0xT8',
   'sticky': false,
   'hidden': false},
 
@@ -277,6 +289,8 @@ export const STUFF = [
   'type': 'video',
   'source': 'vimeo',
   'url': 'https://vimeo.com/143734222',
+  'cover': 'https://i.vimeocdn.com/video/546913997_640x360.jpg',
+  'videoId': '143734222',
   'sticky': false,
   'hidden': false},
 
@@ -295,6 +309,7 @@ export const STUFF = [
   'type': 'video',
   'source': 'youtube',
   'url': 'https://www.youtube.com/watch?v=BYzRTxf5OFQ',
+  'videoId': 'BYzRTxf5OFQ',
   'sticky': false,
   'hidden': false},
 
@@ -313,6 +328,8 @@ export const STUFF = [
   'type': 'video',
   'source': 'vimeo',
   'url': 'https://vimeo.com/128617908',
+  'cover': 'https://i.vimeocdn.com/video/519819099_640x360.jpg',
+  'videoId': '128617908',
   'sticky': false,
   'hidden': false},
 
@@ -349,6 +366,7 @@ export const STUFF = [
   'type': 'video',
   'source': 'youtube',
   'url': 'https://www.youtube.com/watch?v=W_N-lVkshnU',
+  'videoId': 'lVkshnU',
   'sticky': false,
   'hidden': false},
 
@@ -403,6 +421,8 @@ export const STUFF = [
   'type': 'video',
   'source': 'vimeo',
   'url': 'https://vimeo.com/90479477',
+  'cover': 'https://i.vimeocdn.com/video/469629141_640x360.jpg',
+  'videoId': '90479477',
   'sticky': false,
   'hidden': false},
 
@@ -431,6 +451,7 @@ export const STUFF = [
   'type': 'video',
   'source': 'youtube',
   'url': 'https://www.youtube.com/watch?v=ewEMBMtX_t8',
+  'videoId': 'ewEMBMtX_t8',
   'sticky': false,
   'hidden': false},
 
@@ -467,6 +488,7 @@ export const STUFF = [
   'type': 'video',
   'source': 'youtube',
   'url': 'https://www.youtube.com/watch?v=DIoVZmdjviE',
+  'videoId': 'DIoVZmdjviE',
   'sticky': false,
   'hidden': false},
 
@@ -485,6 +507,7 @@ export const STUFF = [
   'type': 'video',
   'source': 'youtube',
   'url': 'https://www.youtube.com/watch?v=fRGr6pejUJo',
+  'videoId': 'fRGr6pejUJo',
   'sticky': false,
   'hidden': false},
 
@@ -512,6 +535,7 @@ export const STUFF = [
   'type': 'video',
   'source': 'youtube',
   'url': 'https://www.youtube.com/watch?v=ioUcFJ1CMo4',
+  'videoId': 'ioUcFJ1CMo4',
   'sticky': false,
   'hidden': false},
 
@@ -530,6 +554,8 @@ export const STUFF = [
   'type': 'video',
   'source': 'vimeo',
   'url': 'https://vimeo.com/131010806',
+  'cover': 'https://i.vimeocdn.com/video/523090777_640x360.jpg',
+  'videoId': '131010806',
   'sticky': false,
   'hidden': false},
 
@@ -557,6 +583,7 @@ export const STUFF = [
   'type': 'video',
   'source': 'youtube',
   'url': 'https://www.youtube.com/watch?v=BQ8S236BGrY',
+  'videoId': 'BQ8S236BGrY',
   'sticky': false,
   'hidden': false},
 
@@ -621,6 +648,8 @@ export const STUFF = [
   'type': 'video',
   'source': 'vimeo',
   'url': 'https://vimeo.com/98642918',
+  'cover': 'https://i.vimeocdn.com/video/479436845_640x360.jpg',
+  'videoId': '98642918',
   'sticky': false,
   'hidden': false},
 
@@ -684,6 +713,7 @@ export const STUFF = [
   'type': 'video',
   'source': 'youtube',
   'url': 'https://www.youtube.com/watch?v=1HV_y6lNKC4',
+  'videoId': '1HV_y6lNKC4',
   'sticky': false,
   'hidden': false},
 
@@ -702,6 +732,7 @@ export const STUFF = [
   'type': 'video',
   'source': 'youtube',
   'url': 'https://www.youtube.com/watch?v=Xd2gv8YPWSo',
+  'videoId': 'Xd2gv8YPWSo',
   'sticky': false,
   'hidden': false},
 
@@ -740,6 +771,8 @@ export const STUFF = [
   'type': 'video',
   'source': 'vimeo',
   'url': 'https://vimeo.com/83750474',
+  'cover': 'https://i.vimeocdn.com/video/460330587_640x360.jpg',
+  'videoId': '83750474',
   'sticky': false,
   'hidden': false},
 
@@ -849,6 +882,7 @@ export const STUFF = [
   'type': 'video',
   'source': 'youtube',
   'url': 'https://www.youtube.com/watch?v=yF2H-IaqR_g',
+  'videoId': 'IaqR_g',
   'sticky': false,
   'hidden': false},
 
@@ -867,6 +901,7 @@ export const STUFF = [
   'type': 'video',
   'source': 'youtube',
   'url': 'https://www.youtube.com/watch?v=sGBqRB2K4-k',
+  'videoId': 'k',
   'sticky': false,
   'hidden': false},
 
@@ -940,6 +975,7 @@ export const STUFF = [
   'type': 'video',
   'source': 'youtube',
   'url': 'https://www.youtube.com/watch?v=U1YYMHEGUq8',
+  'videoId': 'U1YYMHEGUq8',
   'sticky': false,
   'hidden': false},
 
@@ -968,6 +1004,7 @@ export const STUFF = [
   'type': 'video',
   'source': 'youtube',
   'url': 'https://www.youtube.com/watch?v=DPYVjmu3NLg',
+  'videoId': 'DPYVjmu3NLg',
   'sticky': false,
   'hidden': false},
 
@@ -995,6 +1032,8 @@ export const STUFF = [
   'type': 'video',
   'source': 'vimeo',
   'url': 'https://vimeo.com/114778451',
+  'cover': 'https://i.vimeocdn.com/video/500584740_640x360.jpg',
+  'videoId': '114778451',
   'sticky': false,
   'hidden': false},
 
@@ -1041,6 +1080,7 @@ export const STUFF = [
   'type': 'video',
   'source': 'youtube',
   'url': 'https://www.youtube.com/watch?v=c00yvGmBzAI',
+  'videoId': 'c00yvGmBzAI',
   'sticky': false,
   'hidden': false},
 
@@ -1104,6 +1144,7 @@ export const STUFF = [
   'type': 'video',
   'source': 'youtube',
   'url': 'https://www.youtube.com/watch?v=-xw_QUHaL58',
+  'videoId': 'xw_QUHaL58',
   'sticky': false,
   'hidden': false},
 
@@ -1122,6 +1163,7 @@ export const STUFF = [
   'type': 'video',
   'source': 'youtube',
   'url': 'https://www.youtube.com/watch?v=RRqm-3UrbCc',
+  'videoId': '3UrbCc',
   'sticky': false,
   'hidden': false},
 
@@ -1140,6 +1182,7 @@ export const STUFF = [
   'type': 'video',
   'source': 'youtube',
   'url': 'https://www.youtube.com/watch?v=7QxvbWfKbrU',
+  'videoId': '7QxvbWfKbrU',
   'sticky': false,
   'hidden': false},
 
@@ -1167,6 +1210,7 @@ export const STUFF = [
   'type': 'video',
   'source': 'youtube',
   'url': 'https://www.youtube.com/watch?v=l_M9f7Lkpx0',
+  'videoId': 'l_M9f7Lkpx0',
   'sticky': false,
   'hidden': false},
 
@@ -1194,6 +1238,7 @@ export const STUFF = [
   'type': 'video',
   'source': 'youtube',
   'url': 'https://www.youtube.com/watch?v=7WmltWu9w30',
+  'videoId': '7WmltWu9w30',
   'sticky': false,
   'hidden': false},
 
@@ -1230,6 +1275,7 @@ export const STUFF = [
   'type': 'video',
   'source': 'youtube',
   'url': 'https://www.youtube.com/watch?v=PGWfYekEqxE',
+  'videoId': 'PGWfYekEqxE',
   'sticky': false,
   'hidden': false},
 
@@ -1257,6 +1303,7 @@ export const STUFF = [
   'type': 'video',
   'source': 'youtube',
   'url': 'https://www.youtube.com/watch?v=wAioLVwd2Qw',
+  'videoId': 'wAioLVwd2Qw',
   'sticky': false,
   'hidden': false},
 
@@ -1302,6 +1349,8 @@ export const STUFF = [
   'type': 'video',
   'source': 'vimeo',
   'url': 'https://vimeo.com/264053576',
+  'cover': 'https://i.vimeocdn.com/video/693737282_640x360.jpg',
+  'videoId': '264053576',
   'sticky': false,
   'hidden': false},
 
@@ -1320,6 +1369,7 @@ export const STUFF = [
   'type': 'video',
   'source': 'youtube',
   'url': 'https://www.youtube.com/watch?v=zuOnKYi_2Yo',
+  'videoId': 'zuOnKYi_2Yo',
   'sticky': false,
   'hidden': false},
 
@@ -1338,6 +1388,7 @@ export const STUFF = [
   'type': 'video',
   'source': 'youtube',
   'url': 'https://www.youtube.com/watch?v=cBt55LCD7_4',
+  'videoId': 'cBt55LCD7_4',
   'sticky': false,
   'hidden': false},
 
@@ -1356,6 +1407,7 @@ export const STUFF = [
   'type': 'video',
   'source': 'youtube',
   'url': 'https://www.youtube.com/watch?v=BvUUpIfsVDw',
+  'videoId': 'BvUUpIfsVDw',
   'sticky': false,
   'hidden': false},
 
@@ -1383,6 +1435,7 @@ export const STUFF = [
   'type': 'video',
   'source': 'youtube',
   'url': 'https://www.youtube.com/watch?v=WUYHJY7DTkw',
+  'videoId': 'WUYHJY7DTkw',
   'sticky': false,
   'hidden': false},
 
@@ -1429,6 +1482,7 @@ export const STUFF = [
   'type': 'video',
   'source': 'youtube',
   'url': 'https://www.youtube.com/watch?v=UDbrVNUYWlk',
+  'videoId': 'UDbrVNUYWlk',
   'sticky': false,
   'hidden': false},
 
@@ -1456,6 +1510,8 @@ export const STUFF = [
   'type': 'video',
   'source': 'vimeo',
   'url': 'https://vimeo.com/98525964',
+  'cover': 'https://i.vimeocdn.com/video/598476311_640x360.jpg',
+  'videoId': '98525964',
   'sticky': false,
   'hidden': false},
 

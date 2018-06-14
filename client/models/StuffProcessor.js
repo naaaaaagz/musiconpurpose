@@ -12,36 +12,26 @@ export default class Stuff {
         }
         case 'soundcloud': return {
           id: index,
-          cover: /* TODO */ null,
+          cover: item.cover, /* soundcloud api doesn't let new regs for now :( */
           link: item.url,
           ...item
           /* TODO embed for modal? */
         }
         case 'youtube': return {
           id: index,
-          cover: /* TODO */ null,
+          cover: `https://img.youtube.com/vi/${item.videoId}/hqdefault.jpg`,
           link: item.url,
-          /* TODO: For modal */
-          // modal
-          videoId: /* TODO */ null,
           ...item
         }
         case 'vimeo': return {
           id: index,
-          cover: /* TODO */ null,
           link: item.url,
-          /* TODO: For modal */
-          // modal
-          videoId: /* TODO */ null,
           ...item
         }
         case 'custom': return {
           id: index,
-          cover: /* TODO */ null,
+          cover: `img/${item.img}`,
           link: item.url,
-          /* TODO: For modal */
-          // modal
-          videoId: /* TODO */ null,
           ...item
         }
       }
