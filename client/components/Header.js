@@ -1,4 +1,5 @@
 import React from 'react';
+import ContactModal from './ContactModal';
 
 export default class Header extends React.Component {
 
@@ -6,7 +7,7 @@ export default class Header extends React.Component {
     return (
       <div className="header">
         <h1>///nagz////////</h1>
-        <a href="#">contact</a>
+        <ContactModal />
       </div>
     );
   }
