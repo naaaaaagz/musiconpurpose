@@ -1,6 +1,7 @@
 /* eslint-env node */
 
 const HtmlWebpackPlugin = require('html-webpack-plugin')
+const CopyWebpackPlugin = require('copy-webpack-plugin')
 const path = require('path')
 
 module.exports = {
@@ -34,7 +35,10 @@ module.exports = {
     new HtmlWebpackPlugin({
       filename: path.join(__dirname, '/dist/index.html'),
       template: './client/template/index.html'
-    })
+    }),
+    new CopyWebpackPlugin([
+        { from: 'static' }
+    ])
   ],
   devServer: {
     contentBase: path.join(__dirname, '/dist'),
