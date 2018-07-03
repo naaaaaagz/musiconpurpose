@@ -39,7 +39,7 @@ export default [
 
   {'size': '4',
   'title': 'Nagz - Form Over Function [2017]',
-  'text': 'Contains my 2016 track �Lean Hopper�',
+  'text': 'Contains my 2016 track \'Lean Hopper\'',
   'type': 'video',
   'source': 'youtube',
   'url': 'https://www.youtube.com/watch?v=zvDS3vsRx34',
@@ -58,7 +58,7 @@ export default [
 
   {'size': '4',
   'title': 'Nagz - Told you So [2014]',
-  'text': 'Directed by Holdosi M�t�, edited by Vecsei Viktor�',
+  'text': 'Directed by Holdosi Máté, edited by Vecsei Viktor',
   'type': 'video',
   'source': 'youtube',
   'url': 'https://www.youtube.com/watch?v=2PnFVxc3zNI',
