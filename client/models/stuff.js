@@ -1487,15 +1487,6 @@ export default [
   'sticky': false,
   'hidden': false},
 
-  {'size': '2',
-  'title': 'Nagz - Dentist Pigeon [2000]',
-  'text': 'Doskpop, Amiga, 4channel MOD, Fyanica',
-  'type': 'music',
-  'source': 'soundcloud',
-  'url': 'https://soundcloud.com/nagz-old-tracked/dentist-pigeon',
-  'sticky': false,
-  'hidden': false},
-
   {'size': '3',
   'title': 'Nagz - Goodnight Kiss [2000]',
   'text': 'Ambient for all you lovers out there',
@@ -1506,7 +1497,7 @@ export default [
   'hidden': false},
 
   {'size': '2',
-  'title': 'Toldi Artmozi Spot by �gota V�gs� and Zsuzsi B�nyai',
+  'title': 'Toldi Artmozi Spot by Ágota Végső and Zsuzsi Bányai',
   'text': 'Music by Nagz',
   'type': 'video',
   'source': 'vimeo',
