@@ -316,7 +316,7 @@ export default [
   'type': 'music',
   'source': 'soundcloud',
   'url': 'https://soundcloud.com/naaaaaagz/selfmademusic-technicolor-nagz',
-  'cover': 'https://i1.sndcdn.com/artworks-000021384900-gxx9xs-t500x500.jpg',
+  'cover': 'https://i1.sndcdn.com/artworks-000370999263-ku3b0b-t500x500.jpg',
   'sticky': false,
   'hidden': false},
 
