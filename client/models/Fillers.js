@@ -14,7 +14,6 @@ export default class Fillers {
     this.picked++
     let item = this.fillers[Math.floor(Math.random() * this.fillers.length)]
     item.id = this.picked + 10000
-    console.log(item.id)
     return item
   }
 }

@@ -62,7 +62,6 @@ export default class MainView extends React.Component {
     }
 
     const modalComponents = {
-      instagram: InstagramModal,
       soundcloud: SoundcloudModal,
       youtube: YoutubeModal,
       bandcamp: BandcampModal
