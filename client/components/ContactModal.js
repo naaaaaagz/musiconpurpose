@@ -20,7 +20,7 @@ export default class ContactModal extends React.Component {
   render() {
     const { open } = this.state;
     return (
-      <div>
+      <div className="contactButton">
         <button onClick={this.onOpenModal.bind(this)}>Contact</button>
         <Modal open={open} onClose={this.onCloseModal.bind(this)} center>
           <h2>Simple centered modal</h2>
