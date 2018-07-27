@@ -68,7 +68,7 @@ export default class SmartGrid extends React.Component {
       let solver = new GridSolver(noOfCols);
 
       children = children.map((el) => {
-        let elW = ['2', '3', '4'].includes(el.props.size) ? 2 : 1
+        let elW = el.props.size === '4' ? 4 : ['2', '3', '4'].includes(el.props.size) ? 2 : 1
         let elH = ['3', '4'].includes(el.props.size) ? 2 : 1
         if (elW > noOfCols) {
           elW = noOfCols;
