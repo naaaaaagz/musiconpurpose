@@ -2,7 +2,6 @@ import fillers from './filler'
 
 export default class Fillers {
   constructor () {
-    console.log(fillers)
     this.fillers = fillers.map((item, i) => {
       item.cover = item.url + '/media/?size=t'
       return item
