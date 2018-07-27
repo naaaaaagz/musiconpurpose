@@ -9,11 +9,8 @@ import SoundcloudModal from 'components/SoundcloudModal'
 import YoutubeModal from 'components/YoutubeModal'
 import BandcampModal from 'components/BandcampModal'
 
-import Soundcloud from 'models/Soundcloud'
-import Instagram from 'models/Instagram'
-import Youtube from 'models/Youtube'
-import Bandcamp from 'models/Bandcamp'
 import Stuff from 'models/StuffProcessor'
+import Fillers from 'models/Fillers'
 
 export default class MainView extends React.Component {
   constructor (props) {
@@ -21,17 +18,21 @@ export default class MainView extends React.Component {
     this.state = {
       data: []
     }
-    this.model = new Stuff()
-    this.models = [
-      new Soundcloud(),
-      new Instagram(),
-      new Youtube(),
-      new Bandcamp()
-    ]
+    this.stuff = new Stuff()
+    this.fillers = new Fillers()
   }
 
   componentWillMount () {
-    this.setState({data: this.model.process()})
+    let interlaced = []
+    let stuff = this.stuff.process()
+    const FILLERDENSITY = 4
+    stuff.forEach((source, index) => {
+      interlaced.push(source)
+      if (index % FILLERDENSITY === 0) {
+        interlaced.push(this.fillers.pick())
+      }
+    })
+    this.setState({data: interlaced})
   }
 
   openModal (data) {
@@ -61,7 +62,6 @@ export default class MainView extends React.Component {
     }
 
     const modalComponents = {
-      instagram: InstagramModal,
       soundcloud: SoundcloudModal,
       youtube: YoutubeModal,
       bandcamp: BandcampModal

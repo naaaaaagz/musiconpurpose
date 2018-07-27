@@ -4,12 +4,6 @@ export default class Stuff {
   process () {
     return stuff.filter(item => !item.hidden).map((item, index) => {
       switch (item.source) {
-        case 'instagram': return {
-          id: index,
-          cover: item.url + '/media/?size=t',
-          link: item.url,
-          ...item
-        }
         case 'soundcloud': return {
           id: index,
           cover: item.cover, /* soundcloud api doesn't let new regs for now :( */
