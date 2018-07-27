@@ -16,9 +16,6 @@ export default class Card extends React.Component {
       soundcloud: {
         icon: 'headphones'
       },
-      instagram: {
-        icon: 'instagram'
-      },
       youtube: {
         icon: 'video-camera'
       },
@@ -30,7 +27,7 @@ export default class Card extends React.Component {
     const handler = handlers[this.props.source]
 
     return (
-      <div className='card' style={this.props.style} onClick={this.props.openModal}>
+      <div className={`card ${this.props.source}`} style={this.props.style} onClick={this.props.source === 'instagram' ? () => {} : this.props.openModal}>
         <div className='content' style={style}>
           {this.props.title && <h2>{handler && <i className={`icon fa fa-${handler.icon}`} />} {this.props.title}</h2>}
         </div>

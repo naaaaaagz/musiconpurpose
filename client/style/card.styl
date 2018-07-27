@@ -3,7 +3,7 @@ card_margin = 2px
 .card
   cursor pointer
   transition all 500ms
-  
+
   .content
     position absolute
     top card_margin
@@ -25,10 +25,13 @@ card_margin = 2px
     color #333
     font-size 13px
 
+  &.instagram
+    cursor default
   &:hover
     transition all 0ms
     background #c00
+    &.instagram
+      background none
     h2
       color white
       background #c00
-      
