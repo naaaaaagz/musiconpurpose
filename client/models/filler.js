@@ -5,6 +5,13 @@ export default [
 {'size': '1',
 'type': 'pic',
 'source': 'instagram',
+'url': 'https://www.instagram.com/p/BmgbhhAAYxD',
+'sticky': false,
+'hidden': false},
+  
+{'size': '1',
+'type': 'pic',
+'source': 'instagram',
 'url': 'https://www.instagram.com/p/BkrwkrbgKwo',
 'sticky': false,
 'hidden': false},
