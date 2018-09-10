@@ -13,8 +13,8 @@ export default class YoutubeModal extends React.Component {
             allowFullScreen
           />
         </div>
-        <h2>title</h2>
-        <p>desciption</p>
+        <h2>{this.props.title}</h2>
+        <p>{this.props.text}</p>
       </div>
     );
   }
