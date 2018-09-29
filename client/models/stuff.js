@@ -45,7 +45,7 @@ export default [
   'type': 'video',
   'source': 'youtube',
   'url': 'https://www.youtube.com/watch?v=b6f5KFb2jrI',
-  'videoId': 'H8vEX1ddFak',
+  'videoId': 'b6f5KFb2jrI',
   'sticky': false,
   'hidden': false},
   
