@@ -5,7 +5,7 @@ export default class WebModal extends React.Component {
   render() {
     return (
       <div className="modal web-modal">
-        <a className="img-link-wrap" href={this.props.url} target="_blank">
+        <a className="modal-content-wrapper" href={this.props.url} target="_blank">
           <img src={this.props.cover} />
         </a>
         <h2>{this.props.title}</h2>

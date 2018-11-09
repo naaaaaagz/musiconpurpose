@@ -44,20 +44,20 @@ a
 .modal
   font-weight 400
   margin 20px
-  .img-link-wrap
-    display block
-    img
-      width 100%
 
-.youtube-modal
-  .iframe-wrapper
-    position relative
-    padding-bottom 56.25%
-    padding-top 25px;
-    height 0
-    iframe
-      position absolute
-      top 0
-      left 0
-      width 100%
-      height 100%
+.modal-content-wrapper
+  display block
+  position relative
+  padding-bottom 56.25%
+  padding-bottom calc(56.25% + 26px)
+  height 0
+  overflow hidden
+  img
+    width 100%
+    object-fit cover
+  iframe
+    position absolute
+    top 0
+    left 0
+    width 100%
+    height 100%

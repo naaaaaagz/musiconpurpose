@@ -5,7 +5,7 @@ export default class YoutubeModal extends React.Component {
   render() {
     return (
       <div className="modal youtube-modal">
-        <div className="iframe-wrapper">
+        <div className="modal-content-wrapper">
           <iframe
             width="640" height="480"
             src={`https://www.youtube.com/embed/${this.props.videoId}?rel=0&amp;showinfo=0&amp`}
