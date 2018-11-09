@@ -71,9 +71,6 @@ export default class MainView extends React.Component {
     const modal = this.state.modalData
     const ModalContent = modal && modalComponents[modal.source]
 
-    console.log(modal);
-
-
     return (
       <div>
         <Header />
