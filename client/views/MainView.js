@@ -7,6 +7,7 @@ import Modal from 'react-modal'
 import SoundcloudModal from 'components/SoundcloudModal'
 import YoutubeModal from 'components/YoutubeModal'
 import BandcampModal from 'components/BandcampModal'
+import WebModal from 'components/WebModal'
 
 import Stuff from 'models/StuffProcessor'
 import Fillers from 'models/Fillers'
@@ -63,7 +64,8 @@ export default class MainView extends React.Component {
     const modalComponents = {
       soundcloud: SoundcloudModal,
       youtube: YoutubeModal,
-      bandcamp: BandcampModal
+      bandcamp: BandcampModal,
+      custom: WebModal
     }
 
     const modal = this.state.modalData
