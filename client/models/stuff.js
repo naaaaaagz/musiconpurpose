@@ -39,6 +39,16 @@ export default [
   'sticky': false,
   'hidden': false},
   
+  {'size': '4',
+  'title': 'Nagz - Chips Don\'t Lie LP [2010]',
+  'text': 'Old chiptunes remastered // Available on all major shops and services',
+  'type': 'web',
+  'source': 'custom',
+  'url': 'https://fanlink.to/ngzchp',
+  'cover': 'img/alb_cdl.png',
+  'sticky': false,
+  'hidden': false},
+  
   {'size': '3',
   'title': 'TGD - Castaway [2018]',
   'text': 'QBParty2018 #2 demo // Code & visual by Jimmi, music by Nagz',
