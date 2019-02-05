@@ -9,6 +9,16 @@ export default [
   'sticky': false,
   'hidden': false},
 
+   {'size': '3',
+  'title': 'Nagz - Propaganda [2019]',
+  'text': 'Demobit2019 tied Music compo winner // rough kuduro with c64 samples',
+  'type': 'music',
+  'source': 'soundcloud',
+  'url': 'https://soundcloud.com/naaaaaagz/propaganda',
+  'cover': 'https://i1.sndcdn.com/artworks-000483005166-abb4xk-t500x500.jpg',
+  'sticky': false,
+  'hidden': false},
+  
   {'size': '3',
   'title': 'Nagz - Heatwave [2018]',
   'text': 'Function2018 Music compo winner // Acapellas by Cut Back, Hawkeye, Krafty Kuts, etc. // Img courtesy of ES',
