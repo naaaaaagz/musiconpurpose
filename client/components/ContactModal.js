@@ -19,13 +19,15 @@ export default class ContactModal extends React.Component {
   }
 
   onSubmit(e) {
-    e.preventDefault();
-    this.setState({isSent: true});
-    const from_email = e.target.querySelector('input').value;
-    const message = e.target.querySelector('textarea').value;
-    var service_id = "default_service";
-    var template_id = "template_sgmZHsMh";
-    emailjs.send(service_id, template_id, {from_email, message});
+    if (e.isTrusted) {
+      e.preventDefault();
+      this.setState({isSent: true});
+      const from_email = e.target.querySelector('input').value;
+      const message = e.target.querySelector('textarea').value;
+      var service_id = "default_service";
+      var template_id = "template_sgmZHsMh";
+      emailjs.send(service_id, template_id, {from_email, message});
+    }
   }
 
   render() {
