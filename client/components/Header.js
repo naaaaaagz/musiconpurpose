@@ -7,7 +7,10 @@ export default class Header extends React.Component {
     return (
       <div className="header">
         <h1>///nagz////////</h1>
-        <ContactModal />
+        <div className="buttonContainer">
+          <ContactModal />
+          <a href="http://fanlink.to/nagz" target="_blank"><button>buy&#47;stream</button></a>
+        </div>
       </div>
     );
   }

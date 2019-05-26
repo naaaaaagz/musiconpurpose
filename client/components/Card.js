@@ -19,6 +19,15 @@ export default class Card extends React.Component {
       youtube: {
         icon: 'video-camera'
       },
+      vimeo: {
+        icon: 'video-camera'
+      },
+      web: {
+        icon: 'globe'
+      },
+      custom: {
+        icon: 'globe'
+      },
       bandcamp: {
         icon: 'headphones'
       }

@@ -75,6 +75,9 @@ export default class SmartGrid extends React.Component {
           elH = noOfCols;
         }
         let pos = solver.findPos(elW, elH);
+        if (!pos) {
+          pos = {col: 4, row: 120}
+        }
 
         let style = el.props.style || {};
         style.width = (elW * unitSize) + 'px';
