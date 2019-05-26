@@ -14,6 +14,10 @@ card_margin = 2px
     background-position center
     //box-shadow rgba(0, 0, 0, 0.4) 0 1px 3px
     transition all 300ms
+
+  .content:hover h2
+    opacity 1
+
   h2
     position absolute
     bottom 0
@@ -21,9 +25,10 @@ card_margin = 2px
     right 0
     margin 0
     padding 10px
-    background white
     color #333
     font-size 13px
+    opacity 0
+    transition 0.5s
 
   &.instagram
     cursor default
