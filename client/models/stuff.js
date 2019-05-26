@@ -1,7 +1,6 @@
 /* eslint indent: "off" */
 
 export default [
-
   {'size': '1',
   'type': 'pic',
   'source': 'instagram',
@@ -1725,5 +1724,7 @@ export default [
   'url': 'https://soundcloud.com/musiconpurpose/musiconpurpose-net-demoreel',
   'cover': 'https://i1.sndcdn.com/artworks-000024613397-z55a9z-t500x500.jpg',
   'sticky': false,
-  'hidden': false}
+  'hidden': false},
+
+
 ]
