@@ -7,6 +7,7 @@ import Modal from 'react-modal'
 import SoundcloudModal from 'components/SoundcloudModal'
 import YoutubeModal from 'components/YoutubeModal'
 import BandcampModal from 'components/BandcampModal'
+import VimeoModal from 'components/VimeoModal'
 import WebModal from 'components/WebModal'
 
 import Stuff from 'models/StuffProcessor'
@@ -65,6 +66,7 @@ export default class MainView extends React.Component {
       soundcloud: SoundcloudModal,
       youtube: YoutubeModal,
       bandcamp: BandcampModal,
+      vimeo: VimeoModal,
       custom: WebModal
     }
 

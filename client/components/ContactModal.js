@@ -39,7 +39,7 @@ export default class ContactModal extends React.Component {
           <div className='contactModal'>
             <button className="contactModalCloseButton" onClick={this.onCloseModal.bind(this)}>x</button>
             <div className="ContactModalContent">
-              {isSent ? <h2>Message sent successfully</h2> : 
+              {isSent ? <h2 className="contactSentMessage">Message sent successfully</h2> : 
                 <form className="contactForm" onSubmit={this.onSubmit.bind(this)}>
                   <label for="email">E-mail:</label>
                   <input id="email" className="contactInput" type="email" />
