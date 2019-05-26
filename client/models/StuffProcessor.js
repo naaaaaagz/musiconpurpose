@@ -11,7 +11,7 @@ export default class Stuff {
           ...item
         }
         case 'soundcloud': return {
-          id: index,
+          id: item.id || index,
           cover: item.cover, /* soundcloud api doesn't let new regs for now :( */
           link: item.url,
           ...item

@@ -9,6 +9,7 @@ export default [
   'hidden': false},
 
   {'size': '3',
+  'id': 569911371,
   'title': 'Nagz - Propaganda [2019]',
   'text': 'Demobit2019 tied Music compo winner // rough kuduro with c64 samples',
   'type': 'music',
