@@ -38,7 +38,8 @@ export default class Card extends React.Component {
     return (
       <div className={`card ${this.props.source}`} style={this.props.style} onClick={this.props.source === 'instagram' ? () => {} : this.props.openModal}>
         <div className='content' style={style}>
-          {this.props.title && <h2>{handler && <i className={`icon fa fa-${handler.icon}`} />} {this.props.title}</h2>}
+          {handler && <h3><i className={`icon fa fa-${handler.icon}`}/></h3>}
+          {this.props.title && <h2>{this.props.title}</h2>}
         </div>
       </div>
     )
