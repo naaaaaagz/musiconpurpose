@@ -2,6 +2,7 @@ import fillers from './filler'
 
 export default class Fillers {
   constructor () {
+    this.alreadyPicked = [];
     this.fillers = fillers.map((item, i) => {
       item.cover = item.url + '/media/?size=t'
       return item
@@ -11,8 +12,14 @@ export default class Fillers {
 
   pick () {
     this.picked++
-    let item = this.fillers[Math.floor(Math.random() * this.fillers.length)]
-    item.id = this.picked + 10000
-    return item
+    const notFound = true
+    while(notFound){
+      let item = this.fillers[Math.floor(Math.random() * this.fillers.length)]
+      item.id = item.cover
+      if (!this.alreadyPicked.includes(item.id)) {
+        this.alreadyPicked.push(item.id)
+        return item
+      }
+    }
   }
 }

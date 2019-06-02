@@ -9,7 +9,7 @@ export default class Card extends React.Component {
 
   render () {
     const style = {
-      backgroundImage: this.props.cover ? `url(${this.props.cover})` : null
+      backgroundImage: this.props.cover ? `url(${this.props.cover})` : null,
     }
 
     const handlers = {
@@ -34,7 +34,6 @@ export default class Card extends React.Component {
     }
 
     const handler = handlers[this.props.source]
-
     return (
       <div className={`card ${this.props.source}`} style={this.props.style} onClick={this.props.source === 'instagram' ? () => {} : this.props.openModal}>
         <div className='content' style={style}>

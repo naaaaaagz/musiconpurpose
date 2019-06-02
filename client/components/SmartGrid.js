@@ -14,12 +14,12 @@ class GridSolver {
       return;
     }
 
-    for (let y = 0; y < 100; y++) {
+    for (let y = 0; y < 100000; y++) {
       for (let x = 0; x <= cols - width; x++) {
         let fits = true;
         let ptrs = [];
-        for (let x2 = 0; fits && x2 < width; x2++) {
-          for (let y2 = 0; fits && y2 < height; y2++) {
+        for (let x2 = 0; x2 < width; x2++) {
+          for (let y2 = 0; y2 < height; y2++) {
             let ptr = (x + x2) + (y + y2) * cols;
             if (this.grid[ptr]) {
               fits = false;
@@ -29,7 +29,9 @@ class GridSolver {
           }
         }
         if (fits) {
-          ptrs.forEach((x) => this.grid[x] = true);
+          ptrs.forEach((x) => {
+            this.grid[x] = true
+          });
           return {col: x, row: y};
         }
       }
@@ -66,7 +68,6 @@ export default class SmartGrid extends React.Component {
       const noOfCols = Math.floor(this.state.width / this.props.minChildSize);
       const unitSize = this.state.width / noOfCols;
       let solver = new GridSolver(noOfCols);
-
       children = children.map((el) => {
         let elW = el.props.size === '4' ? 4 : ['2', '3', '4'].includes(el.props.size) ? 2 : 1
         let elH = ['3', '4'].includes(el.props.size) ? 2 : 1
@@ -76,7 +77,8 @@ export default class SmartGrid extends React.Component {
         }
         let pos = solver.findPos(elW, elH);
         if (!pos) {
-          pos = {col: 4, row: 120}
+          console.log('nopos')
+          pos = {col: 220, row: 1}
         }
 
         let style = el.props.style || {};
@@ -85,7 +87,6 @@ export default class SmartGrid extends React.Component {
         style.left = (pos.col * unitSize) + 'px';
         style.top = (pos.row * unitSize) + 'px';
         let key = el.props.key || el.props.id || Math.random();
-
         return React.cloneElement(el, {style, key});
       });
 

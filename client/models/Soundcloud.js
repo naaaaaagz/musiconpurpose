@@ -5,7 +5,7 @@ export default class SoundCloudTracks {
   fetch() {
     return new Promise((resolve, reject) => {
       request
-        .get('https://api.soundcloud.com/users/462773/tracks?client_id=xxxx')
+        .get('https://api.soundcloud.com/users/462773/tracks?client_id=xxx')
         .end((err, res) => {
           if (err) {
             reject(err);
