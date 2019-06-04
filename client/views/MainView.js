@@ -26,7 +26,7 @@ export default class MainView extends React.Component {
   componentWillMount () {
     let interlaced = []
     let stuff = this.stuff.process()
-    const FILLERDENSITY = 4
+    const FILLERDENSITY = 3
     stuff.forEach((source, index) => {
       interlaced.push(source)
       if (index % FILLERDENSITY === 0) {
