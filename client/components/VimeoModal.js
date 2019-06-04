@@ -7,9 +7,7 @@ export default class VimeoModal extends React.Component {
         <div className='modal-content-wrapper'>
           <iframe
             src={`https://player.vimeo.com/video/${this.props.videoId}`}
-            width='640'
-            height='360'
-            frameborder='0'
+            frameBorder="'0'"
             allow='autoplay; fullscreen'
             allowfullscreen
           />

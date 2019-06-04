@@ -45,7 +45,7 @@ export default class ContactModal extends React.Component {
                   <input id="email" className="contactInput" type="email" />
                   <label for="message">Message:</label>
                   <textarea id="message" className="contactInput"></textarea>
-                  <input className="submitButton" type="submit"  />
+                  <input className="submitButton" type="submit" value="Send"  />
                 </form>
               }
             </div>
