@@ -9,13 +9,14 @@ import YoutubeModal from 'components/YoutubeModal'
 import BandcampModal from 'components/BandcampModal'
 import VimeoModal from 'components/VimeoModal'
 import WebModal from 'components/WebModal'
+import { withRouter } from 'react-router-dom';
 
 import Stuff from 'models/StuffProcessor'
 import Fillers from 'models/Fillers'
 
-export default class MainView extends React.Component {
+class MainView extends React.Component {
   constructor (props) {
-    super(props)
+    super(props);
     this.state = {
       data: []
     }
@@ -38,11 +39,13 @@ export default class MainView extends React.Component {
 
   openModal (data) {
     return () => {
+      this.props.history.push('/show')
       this.setState({modalData: data})
     }
   }
 
   closeModal () {
+    this.props.history.push('/')
     this.setState({modalData: null})
   }
 
@@ -70,7 +73,7 @@ export default class MainView extends React.Component {
       custom: WebModal
     }
 
-    const modal = this.state.modalData
+    const modal = this.props.location.pathname === '/' ? null : this.state.modalData
     const ModalContent = modal && modalComponents[modal.source]
 
     return (
@@ -91,3 +94,5 @@ export default class MainView extends React.Component {
     )
   }
 }
+
+export default withRouter(MainView);
