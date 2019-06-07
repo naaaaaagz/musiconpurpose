@@ -46,8 +46,8 @@ export default [
   'text': 'Official Makunouchi Bento remix // Footage from Bodrog',
   'type': 'video',
   'source': 'youtube',
-  'url': 'https://www.youtube.com/watch?v=zvDS3vsRx34',
-  'videoId': 'zvDS3vsRx34',
+  'url': 'https://www.youtube.com/watch?v=6kkUK65lxas',
+  'videoId': '6kkUK65lxas',
   'sticky': false,
   'hidden': false},
   
