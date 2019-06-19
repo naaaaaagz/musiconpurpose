@@ -27,7 +27,7 @@ class MainView extends React.Component {
   componentWillMount () {
     let interlaced = []
     let stuff = this.stuff.process()
-    const FILLERDENSITY = 3
+    const FILLERDENSITY = 2
     stuff.forEach((source, index) => {
       interlaced.push(source)
       if (index % FILLERDENSITY === 0) {
@@ -73,7 +73,7 @@ class MainView extends React.Component {
       custom: WebModal
     }
 
-    const modal = this.props.location.pathname === '/' ? null : this.state.modalData
+    const modal = !this.props.location.pathname.includes('show') ? null : this.state.modalData
     const ModalContent = modal && modalComponents[modal.source]
 
     return (

@@ -65,7 +65,7 @@ export default class SmartGrid extends React.Component {
     if (this.state.width >= this.props.minChildSize) {
       let children = Array.isArray(this.props.children) ? this.props.children : [this.props.children];
 
-      const noOfCols = Math.floor(this.state.width / this.props.minChildSize) + 1;
+      const noOfCols = Math.floor(this.state.width / this.props.minChildSize) + 2;
       const unitSize = this.state.width / noOfCols;
       let solver = new GridSolver(noOfCols);
       children = children.map((el) => {

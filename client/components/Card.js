@@ -9,7 +9,8 @@ export default class Card extends React.Component {
 
   render () {
     const style = {
-      backgroundImage: this.props.cover ? `url(${this.props.cover})` : null,
+      background: this.props.cover ? `url(${this.props.cover}) no-repeat center` : null,
+      backgroundSize: this.props.size === '3' ? 'unset': 'cover',
     }
 
     const handlers = {
