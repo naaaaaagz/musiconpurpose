@@ -9,7 +9,7 @@ export default class Header extends React.Component {
         <h1><a href="#">///nagz////////</a></h1>
         <div className="buttonContainer">
           <ContactModal />
-          <a href="http://fanlink.to/nagz" target="_blank"><button>buy&#47;stream</button></a>
+          <a href="http://fanlink.to/nagz" target="_blank"><button className="leftButton">buy&#47;stream</button></a>
         </div>
       </div>
     );
