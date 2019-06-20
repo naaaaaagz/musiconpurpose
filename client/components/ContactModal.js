@@ -34,7 +34,7 @@ export default class ContactModal extends React.Component {
     const { open, isSent } = this.state;
     return (
       <div className='contactButton'>
-        <button onClick={this.onOpenModal.bind(this)}>Contact</button>
+        <button onClick={this.onOpenModal.bind(this)} className="leftButton">Contact</button>
         <div className={open ? 'modalOpen' : 'modalClosed'}>
           <div className='contactModal'>
             <button className="contactModalCloseButton" onClick={this.onCloseModal.bind(this)}>x</button>

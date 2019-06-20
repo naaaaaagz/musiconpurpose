@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <script>
+      if (!location.href.includes('localhost') && location.protocol != 'https:'){
+        location.href = 'https:' + window.location.href.substring(window.location.protocol.length);
+      }
+    </script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-22167910-1"></script>
     <script>
