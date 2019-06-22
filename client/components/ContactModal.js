@@ -35,16 +35,16 @@ export default class ContactModal extends React.Component {
     return (
       <div className='contactButton'>
         <button onClick={this.onOpenModal.bind(this)} className="leftButton">Contact</button>
-        <div className={open ? 'modalOpen' : 'modalClosed'}>
-          <div className='contactModal'>
+        <div onClick={this.onCloseModal.bind(this)} className={open ? 'modalOpen' : 'modalClosed'}>
+          <div className='contactModal' onClick={(e) => {e.stopPropagation()}}>
             <button className="contactModalCloseButton" onClick={this.onCloseModal.bind(this)}>x</button>
             <div className="ContactModalContent">
               {isSent ? <h2 className="contactSentMessage">Message sent successfully</h2> : 
                 <form className="contactForm" onSubmit={this.onSubmit.bind(this)}>
                   <label for="email">E-mail:</label>
-                  <input id="email" className="contactInput" type="email" />
+                  <input id="email" className="contactInput" type="email" required />
                   <label for="message">Message:</label>
-                  <textarea id="message" className="contactInput"></textarea>
+                  <textarea id="message" className="contactInput" required></textarea>
                   <input className="submitButton" type="submit" value="Send"  />
                 </form>
               }
