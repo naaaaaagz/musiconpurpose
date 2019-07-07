@@ -37,7 +37,7 @@ export default [
   'type': 'video',
   'source': 'youtube',
   'url': 'https://www.youtube.com/watch?v=H8vEX1ddFak',
-  'videoId': 'H8vEX1ddFak',
+  'videoId': 'nn3NpHahilY',
   'sticky': false,
   'hidden': false},
   
@@ -248,7 +248,7 @@ export default [
   'type': 'video',
   'source': 'youtube',
   'url': 'https://www.youtube.com/watch?v=fZ0e1HUBJQs',
-  'videoId': 'fZ0e1HUBJQs',
+  'videoId': 'F1oSxz8OjN4',
   'sticky': false,
   'hidden': false},
 
