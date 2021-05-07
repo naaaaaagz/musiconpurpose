@@ -23,7 +23,7 @@
     "firebase": "^2.3.1",
     "gh-pages": "^2.0.0",
     "html-webpack-plugin": "^3.2.0",
-    "lodash": "^3.10.1",
+    "lodash": "^4.17.21",
     "path": "^0.12.7",
     "powerchord": "^0.2.2",
     "powergrid": "^0.4.0",
