@@ -42,7 +42,7 @@
     "react-modal": "^0.6.1",
     "react-responsive-modal": "^3.0.3",
     "react-router-dom": "^5.0.1",
-    "superagent": "^1.4.0",
+    "superagent": "^8.0.5",
     "superagent-jsonp": "0.0.6"
   }
 }
